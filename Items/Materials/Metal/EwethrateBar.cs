@@ -25,8 +25,8 @@ namespace EwethrateMod.Items.Materials.Metal
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(ModContent.GetInstance<Placeable.EwethrateOre>(), 4);
+			recipe.AddTile(TileID.Hellforge);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

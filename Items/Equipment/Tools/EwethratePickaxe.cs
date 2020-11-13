@@ -34,7 +34,8 @@ namespace EwethrateMod.Items.Equipment.Tools
         {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.GetInstance<Materials.Metal.EwethrateBar>(), 15);
-			recipe.AddTile(ItemID.WorkBench);
+			recipe.AddTile(ItemID.IronAnvil);
+			recipe.AddTile(ItemID.LeadAnvil);
 			recipe.AddRecipe();
 
         }

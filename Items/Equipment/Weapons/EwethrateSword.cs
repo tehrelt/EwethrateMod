@@ -8,7 +8,7 @@ namespace EwethrateMod.Items.Equipment.Weapons
 		public override void SetStaticDefaults() 
 		{
 			// DisplayName.SetDefault("EwethrateSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("This is a basic modded sword.");
+			Tooltip.SetDefault("");
 		}
 
 		public override void SetDefaults() 
@@ -31,7 +31,8 @@ namespace EwethrateMod.Items.Equipment.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.GetInstance<Materials.Metal.EwethrateBar>(), 10);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(ItemID.IronAnvil);
+			recipe.AddTile(ItemID.LeadAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

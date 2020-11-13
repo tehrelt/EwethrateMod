@@ -25,6 +25,7 @@ namespace EwethrateMod.Items.Placeable
             item.width = 12;
             item.height = 12;
             item.value = 3000;
+            item.material = true;
         }
     }
 }
